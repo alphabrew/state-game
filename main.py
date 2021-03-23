@@ -9,7 +9,6 @@ turtle.shape(image)
 
 guessed_states = []
 
-
 while len(guessed_states)<50:
     answer_state = screen.textinput(title=f"{len(guessed_states)}/50 identified", prompt="Enter state State").title()
 
@@ -24,7 +23,5 @@ while len(guessed_states)<50:
         t.goto(int(row.x), int(row.y))
         t.write(row.state.item())
         guessed_states.append(row.state.item())
-
-
 
 screen.exitonclick()
